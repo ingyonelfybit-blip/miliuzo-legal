@@ -4,149 +4,110 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Privacy Policy — Miliuzo</title>
-<meta name="description" content="How Miliuzo collects, uses, shares, and protects your personal information.">
-<style>
-  :root{
-    --green:#15803D; --green-dark:#0f5f2d; --ink:#111827; --body:#374151;
-    --muted:#6B7280; --bg:#F7F8F7; --card:#FFFFFF; --line:#E5E7EB;
-  }
-  *{box-sizing:border-box;margin:0;padding:0}
-  body{
-    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Helvetica,Arial,sans-serif;
-    background:var(--bg); color:var(--body); line-height:1.65;
-    -webkit-font-smoothing:antialiased;
-  }
-  .hero{
-    background:linear-gradient(135deg,var(--green),var(--green-dark));
-    color:#fff; padding:56px 20px 52px; text-align:center;
-  }
-  .brand{font-size:13px; letter-spacing:2px; font-weight:700; opacity:.85; text-transform:uppercase}
-  .hero h1{font-size:30px; font-weight:800; letter-spacing:-.5px; margin-top:10px}
-  .hero p{opacity:.9; margin-top:8px; font-size:14px}
-  .wrap{max-width:720px; margin:-28px auto 64px; padding:0 16px}
-  .card{
-    background:var(--card); border-radius:18px; padding:32px 28px;
-    box-shadow:0 8px 30px rgba(0,0,0,.07);
-  }
-  h2{
-    font-size:19px; font-weight:700; color:var(--ink);
-    margin:32px 0 10px; padding-bottom:8px; border-bottom:1px solid var(--line);
-  }
-  h2:first-of-type{margin-top:0}
-  h3{font-size:15px; font-weight:700; color:var(--ink); margin:18px 0 6px}
-  p{margin-bottom:12px; font-size:15px}
-  ul{margin:8px 0 14px 20px}
-  li{font-size:15px; margin-bottom:6px}
-  .note{
-    background:#F0FDF4; border-radius:12px; padding:16px 18px;
-    margin:20px 0; font-size:14.5px; color:#14532d;
-  }
-  a{color:var(--green); font-weight:600}
-  footer{text-align:center; color:var(--muted); font-size:13px; margin-top:28px}
-  @media (max-width:520px){
-    .hero h1{font-size:24px} .card{padding:26px 20px}
-  }
-</style>
+<meta name="description" content="What Miliuzo collects, who else sees it, how long we keep it, and how to make us delete it.">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="hero">
-    <div class="brand">Miliuzo</div>
+    <div class="brand"><a href="index.html">Miliuzo</a></div>
     <h1>Privacy Policy</h1>
-    <p>Last updated: July 24, 2026</p>
+    <p>What we collect, who sees it, how long we keep it, and how to make us delete it.</p>
   </div>
-
   <div class="wrap">
     <div class="card">
 
-      <h2>Introduction</h2>
-      <p>This Privacy Policy explains how Miliuzo ("we", "us", or "our") collects, uses, shares, and protects your personal information when you use our platform. By using Miliuzo, you agree to the collection and use of information in accordance with this policy.</p>
+      <h2>The short version</h2>
+      <p>We collect what the marketplace needs to work: who you are, where you are, and what you asked for. When a contractor pays the lead fee for a job, we give them that homeowner's name, phone number and email — that exchange is the whole product, and posting a job is your consent to it.</p>
+      <p>We do not sell your personal information. We do not track you across other companies' apps or websites. There is no advertising network in this app.</p>
 
-      <h2>Information we collect</h2>
-
-      <h3>Account information</h3>
+      <h2>What we collect</h2>
+      <h3>When you create an account</h3>
       <ul>
-        <li>Name and contact information</li>
-        <li>Email address</li>
-        <li>Phone number</li>
-        <li>Business information</li>
-        <li>Login credentials</li>
+        <li>Your name</li>
+        <li>Your email address</li>
+        <li>Your phone number</li>
+        <li>Your state and, if you choose one, your city</li>
+        <li>Your password, stored only as a salted hash — we never see it</li>
       </ul>
-
-      <h3>Service usage information</h3>
+      <h3>If you are a contractor</h3>
       <ul>
-        <li>Lead submissions and responses</li>
-        <li>Service preferences</li>
-        <li>Communication history</li>
-        <li>Transaction records</li>
+        <li>Your business name and, optionally, a licence number and short bio</li>
+        <li>The trades you work in and the states you cover</li>
+        <li>A Stripe customer record, so a card can be kept on file for lead fees</li>
       </ul>
-
-      <h3>Technical information</h3>
+      <h3>As you use the app</h3>
       <ul>
-        <li>IP address</li>
-        <li>Browser type and version</li>
-        <li>Device information</li>
-        <li>Usage patterns and preferences</li>
+        <li>Jobs you post, including title, description, budget and timeline</li>
+        <li>Leads you take, and the fee charged for each</li>
+        <li>Ratings and comments you leave</li>
+        <li>Which leads you opened, and which notifications you tapped</li>
+        <li>Your device notification token, so we can reach your phone</li>
       </ul>
-
       <div class="note">
-        <strong>What we do not collect.</strong> The Miliuzo mobile app does not access your device's GPS location, photos, contacts, or microphone. The service area you choose is a state and city you select yourself. We do not track you across other companies' apps or websites, and we use no third-party advertising or analytics trackers.
+        We do not use your device GPS. Location is the state and city you pick from a list. We never ask for your camera, contacts, or photos except when you choose to scan a card in the payment sheet, which happens entirely inside Stripe's software. <strong>Card numbers never reach Miliuzo</strong> — payment details go directly from your device to Stripe.
       </div>
 
-      <h2>How we use your information</h2>
-      <p>We use your information to:</p>
+      <h2>Why we collect it</h2>
       <ul>
-        <li>Facilitate connections between clients and contractors</li>
-        <li>Process and manage lead submissions</li>
-        <li>Improve our services and user experience</li>
-        <li>Send important notifications about our services</li>
-        <li>Prevent fraud and ensure platform security</li>
-        <li>Comply with legal obligations</li>
+        <li>To show contractors jobs in their trades and service area</li>
+        <li>To introduce a contractor to a homeowner once the lead fee is paid</li>
+        <li>To charge lead fees and send receipts</li>
+        <li>To send notifications you asked for</li>
+        <li>To detect fraud and keep the marketplace safe</li>
+        <li>To understand what works in the product and improve it</li>
+        <li>To meet legal and tax obligations</li>
       </ul>
 
-      <h2>Information sharing</h2>
-      <p>We share your information with:</p>
+      <h2>Who else sees it</h2>
+      <p>Other users, but only as the marketplace requires: a contractor who pays the lead fee for your job receives your name, phone and email. Your contact details are never shown before that.</p>
+      <p>Service providers, who are contractually required to protect your data to the same standard set out here and may only use it to provide their service to us:</p>
       <ul>
-        <li>Other users as necessary for lead processing (with your consent)</li>
-        <li>Service providers who assist in operating our platform</li>
-        <li>Legal authorities when required by law</li>
+        <li><strong>Supabase</strong> — database, authentication and file storage (United States)</li>
+        <li><strong>Stripe</strong> — payment processing and stored cards</li>
+        <li><strong>Google Firebase Cloud Messaging</strong> — delivering push notifications</li>
+        <li><strong>Resend</strong> — sending transactional email such as receipts</li>
+        <li><strong>Apple and Google</strong> — app distribution and crash diagnostics</li>
       </ul>
-      <p><strong>We do not sell your personal information to third parties.</strong></p>
+      <p>We also disclose information when the law requires it, or to protect the rights and safety of our users. We do not sell or share your personal information for cross-context behavioural advertising, as those terms are defined by California law.</p>
 
-      <h2>How lead purchases work</h2>
-      <p>When a contractor purchases a lead, the client's name, phone number and email address are released to that contractor so they can be contacted about the job. Clients who post a job consent to their contact details being shared this way with the contractors who purchase their lead. Contact details are never shown before a purchase.</p>
-
-      <h2>Service providers we use</h2>
+      <h2>How long we keep it</h2>
       <ul>
-        <li><strong>Stripe</strong> — processes card payments. Card details are entered directly into Stripe's secure payment interface and are never stored on our servers.</li>
-        <li><strong>Supabase</strong> — hosts our database and authentication.</li>
-        <li><strong>Firebase Cloud Messaging (Google)</strong> — delivers push notifications. This uses a device token tied to your account, which you can revoke by turning off notifications.</li>
-        <li><strong>Resend</strong> — sends transactional email, such as confirmation codes and purchase receipts.</li>
-      </ul>
-
-      <h2>Data retention and security</h2>
-      <p>We keep your account information for as long as your account is active. Data is transmitted over encrypted connections, access is restricted by row-level security rules, and session credentials are stored encrypted on your device using the platform keystore (iOS Keychain / Android Keystore).</p>
-
-      <h2>Your rights and choices</h2>
-      <p>You have the right to:</p>
-      <ul>
-        <li>Access your personal information</li>
-        <li>Correct inaccurate information</li>
-        <li>Request deletion of your information</li>
-        <li>Opt out of marketing communications</li>
-        <li>Export your data</li>
+        <li>Your account and profile: until you delete your account</li>
+        <li>Jobs you post: until you delete them, or your account</li>
+        <li>Records of lead fees charged: seven years, for tax and accounting law, with your name removed once your account is deleted</li>
+        <li>Ratings and comments: kept without your name, so deleting an account cannot erase honest reviews of a contractor</li>
+        <li>Notification tokens: removed when you sign out or delete the account</li>
+        <li>Support email: two years</li>
       </ul>
 
-      <h2>Children's privacy</h2>
-      <p>Miliuzo is intended for adults contracting or providing professional services. We do not knowingly collect personal information from children under 13.</p>
+      <h2>Deleting your account</h2>
+      <p>Open <strong>Account → Delete account</strong> in the app and type DELETE. This is permanent and we cannot restore it. You do not have to email anyone or wait for us to act.</p>
+      <p>Deleting removes your profile, your contact details, your saved card, your device from our notification list, jobs nobody has taken, your blocks and your reports. What remains is the financial record of lead fees charged, with your identity removed, because US tax rules require us to keep the transaction — and ratings, with your name removed.</p>
 
-      <h2>Changes to this policy</h2>
-      <p>We may update this Privacy Policy from time to time. When we do, we will revise the "Last updated" date at the top of this page.</p>
+      <h2>Withdrawing consent</h2>
+      <ul>
+        <li><strong>Notifications:</strong> Account → Notifications. Marketing is off unless you turn it on, and turning it off stops it at the source, not just on your phone.</li>
+        <li><strong>Sharing your contact with contractors:</strong> this is inherent to posting a job. Close or delete a job to stop new contractors receiving it. Contractors who already paid keep what they paid for.</li>
+        <li><strong>Everything else:</strong> delete your account.</li>
+      </ul>
 
-      <h2>Contact us</h2>
-      <p>If you have questions about this Privacy Policy, or want to access, correct or delete your data, contact us at <a href="mailto:support@miliuzo.com">support@miliuzo.com</a>.</p>
+      <h2>Your rights</h2>
+      <p>Wherever you live, you can ask us to show you the personal information we hold, correct it, delete it, or send you a copy. Write to <a href="mailto:support@miliuzo.com">support@miliuzo.com</a> and we will respond within 30 days.</p>
+      <p>If you live in California, the CCPA as amended by the CPRA gives you the right to know, delete, correct, and opt out of sale or sharing — we do neither — and the right not to be discriminated against for exercising any of them. We do not use or disclose sensitive personal information beyond what is necessary to provide the service.</p>
 
+      <h2>Children</h2>
+      <p>Miliuzo is for adults. You must be at least 18 years old to create an account. We do not knowingly collect information from anyone under 18, and if we learn that we have, we delete it. If you believe a child has given us information, write to <a href="mailto:support@miliuzo.com">support@miliuzo.com</a>.</p>
+
+      <h2>Security</h2>
+      <p>Data is encrypted in transit and at rest. Your session is stored in the device keychain or keystore, and you can require Face ID, Touch ID or your device passcode to open the app from Account → app lock. Access to production data is limited to the people who need it.</p>
+      <p>No system is perfect. If we ever suffer a breach affecting your personal information, we will notify you and the authorities as the law requires.</p>
+
+      <h2>Changes and contact</h2>
+      <p>If we change how we handle your data in a material way, we will tell you in the app before it takes effect. Questions, requests, or complaints: <a href="mailto:support@miliuzo.com">support@miliuzo.com</a>.</p>
+
+      <p class="updated">Last updated: August 15, 2026</p>
     </div>
-    <footer>© 2026 Miliuzo. All rights reserved.</footer>
+    <footer><a href="index.html">All legal documents</a> · © 2026 Miliuzo</footer>
   </div>
 </body>
 </html>
