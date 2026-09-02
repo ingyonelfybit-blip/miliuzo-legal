@@ -142,10 +142,12 @@ a:hover{text-decoration-color:var(--oro-tinta)}
 .entrada{
   display:flex;align-items:baseline;justify-content:space-between;gap:18px;
   padding:22px 2px;border-bottom:1px solid var(--borde);text-decoration:none;color:var(--tinta);
-  transition:padding-left .4s var(--paso);
 }
 .entrada:last-of-type{border-bottom:0}
-.entrada:hover{padding-left:10px}
+/* El empuje al pasar el raton va por transform en los hijos, no por padding:
+   animar padding refluye toda la lista en cada frame.                      */
+.entrada .t,.entrada .flecha{transition:transform .4s var(--paso)}
+.entrada:hover .t{transform:translateX(9px)}
 .entrada .t{font-size:1.1875rem;font-weight:700;letter-spacing:-.015em}
 .entrada .d{display:block;font-size:.9375rem;font-weight:400;color:var(--tenue);margin-top:3px}
 .entrada .flecha{color:var(--oro-tinta);font-size:1.25rem;line-height:1;flex:none;
