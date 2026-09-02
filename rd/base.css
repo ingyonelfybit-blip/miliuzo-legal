@@ -49,10 +49,11 @@ body{
 }
 .masthead-inner{max-width:calc(var(--medida) + 340px);margin:0 auto;position:relative}
 
-.lockup{display:flex;align-items:center;gap:15px;text-decoration:none;width:max-content}
-.lockup img{width:52px;height:auto;display:block;filter:drop-shadow(0 6px 18px rgba(0,0,0,.55))}
+.lockup{display:flex;align-items:center;gap:clamp(14px,2vw,18px);text-decoration:none;width:max-content}
+.lockup img{width:clamp(54px,7vw,68px);height:auto;display:block;
+  filter:drop-shadow(0 8px 22px rgba(0,0,0,.6))}
 .lockup .nombre{
-  font-weight:800;font-size:19px;letter-spacing:.15em;color:var(--papel-alto);
+  font-weight:800;font-size:clamp(19px,2.3vw,23px);letter-spacing:.15em;color:var(--papel-alto);
   text-transform:uppercase;line-height:1;
 }
 .lockup .nombre em{font-style:normal;color:var(--oro)}
